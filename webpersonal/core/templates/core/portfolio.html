@@ -1,0 +1,70 @@
+{% extends 'core/base.html' %}
+
+{%block title%} Portfolio {%endblock%}
+
+{% block background %}{% load static %}{% static 'core/img/portfolio-bg.jpg'%}{%endblock%} <!--Tiene que estar seguido porque sino en el codigo da un salto y no lo lee-->
+
+{%block headers%}
+<h1>Portafolio</h1>
+<span class="subheading">Enterate de temas relevantes </span>
+{%endblock%}
+
+{%block content%}
+<div class="row">
+    <div class="container">
+	      <!-- Proyecto1 -->
+	    <div class="row project">  	
+	      	<div class="col-lg-3 col-md-4 offset-lg-1">
+			      <img class="img-fluid" src="{% static 'core/img/abejas.jpg'%}" alt="">
+	      	</div>
+	        <div class="col-lg-7 col-md-8">
+	      	    <h2 class="section-heading title" id="abejas">Abejas</h2>   
+	            <p>Cada especie del planeta tiene una razón de existir, las abejas no son la excepción y la ONU les tiene dedicado un día del año para concientizar sobre su importancia y preservación.</p>
+	            <p><a href="https://expansion.mx/tendencias/2019/05/20/por-que-son-importantes-las-abejas-en-el-mundo-la-onu-lo-resume-en-10-puntos">Más información</a></p>
+	      	</div>
+	    </div>
+	      <!-- Proyecto2 -->
+	    <div class="row project">  	
+	        <div class="col-lg-3 col-md-4 offset-lg-1">
+			    <img class="img-fluid" src="{% static 'core/img/cdeetica.jpg'%}" alt="">
+	      	</div>
+	        <div class="col-lg-7 col-md-8">
+	      	    <h2 class="section-heading title" id="codigo">Código de ética</h2>   
+	            <p><i>"Sin valores sólidos estamos coqueteando con el desastre, con valores sólidos, podemos enfrentar a los mercados internacionales." </i><br>Rinnov Kan</p>
+	            <p><a href="https://blog.ethicsglobal.com/la-importancia-del-codigo-de-etica-en-la-empresa/">Más información</a></p>
+            </div>
+        </div>
+		  <!-- Proyecto3 -->
+	    <div class="row project">  	
+	        <div class="col-lg-3 col-md-4 offset-lg-1">
+			    <img class="img-fluid" src="{% static 'core/img/elefantes.jpg'%}" alt="">
+	      	</div>
+	        <div class="col-lg-7 col-md-8">
+	      	    <h2 class="section-heading title" id="elefantes">Elefantes</h2>   
+	            <p>Pese a que desde el año 1989 se prohibió la comercialización del marfil en todo el mundo, aún existe gran demanda por este material, lo cual significa que la caza furtiva de elefantes aún se mantiene vigente.</p>
+	            <p><a href="https://conocelafauna.com/c-curiosidades/elefantes-en-peligro-de-extincion/">Más información</a></p>
+            </div>
+        </div>
+		  <!-- Proyecto 4-->
+	    <div class="row project">  	
+	        <div class="col-lg-3 col-md-4 offset-lg-1">
+			    <img class="img-fluid" src="{% static 'core/img/esr.png'%}" alt="">
+	      	</div>
+	        <div class="col-lg-7 col-md-8">
+	      	    <h2 class="section-heading title" id="esr">Empresa Socialmente Responsable</h2>   
+	            <p>Una empresa es socialmente responsable (ESR) cuando trabaja apegada a valores y que dentro de sus objetivos empresariales incluye apoyar necesidades sociales, económicas y ambientales a fin de optimizar su situación competitiva y su valor añadido.</p>
+	            <p><a href="https://www.impulsapopular.com/marketing/que-es-una-empresa-socialmente-responsable/">Más información</a></p>
+            </div>
+        </div>
+		  <!-- Proyecto -->
+        <!--<div class="row project videomupp">  	
+			<div>    
+				<h2 class="section-heading title ">Un buen video</h2>
+				<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+			</div>-->
+	    </div>
+	</div>
+</div>
+
+{%endblock%}
+

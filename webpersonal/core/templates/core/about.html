@@ -1,0 +1,46 @@
+{% extends 'core/base.html' %}
+
+{%block title%}Acerde de{%endblock%}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg'%}{%endblock%} <!--Tiene que estar seguido porque sino en el codigo da un salto y no lo lee-->
+
+
+{%block headers%}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{%endblock%}
+
+
+{%block content%}
+<div class="row">
+    <div  class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/st.jpg'%}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8 ">
+        <h2 class="section-heading">Ética</h2>   
+        <div class="hola">
+            <!--<img src="{% static 'core/img/sacmex.png'%}"  width="350" height="450 "alt="No carga">
+            <img src="{% static 'core/img/how-a-hydrogen-fuel-cell-works.gif'%}"  width="350" height="450 "alt="No carga">
+            
+            <img src="{% static 'core/img/how-a-hydrogen-fuel-cell-works.gif'%}"  width="350" height="450 "alt="No carga">
+            <img src="{% static 'core/img/sacmex.png'%}"  width="350" height="450 "alt="No carga">-->
+            <p><strong>Ética utilitarista:</strong> Es la que se considera que el valor moral de importancia máxima es que resulta útil para la mayoría de los involucrados en la organización, aún y cuando se perjudique a una minoría de individual. </p>
+            <p><strong>Ética emotivista:</strong>Es la que considera que el valor moral de importancia máximaes la conducta que satisface, conviene o da supremacia a los intereses subjetivos de los que ejercen el poder en la empresa.</p>
+            <p><strong>Ética deontológica:</strong>Es aquella que considera que los valores morales de importancia máxima son la dignidad, sus derechos fundamentales y equidad.</p>        
+            <ol><strong>Contenido de un código de ética:</strong>
+                <li>Responsabilidad ambiental
+                <li>Respeto intralaboral
+                <li>Relacion con clientes y proveedores
+                <li>Apoyo a comunidad
+                <li>Cumpliemiento de leyes  
+            </ol>
+            
+        </div>
+        <div>
+            <img class="imgetica" src="{% static 'core/img/etica.png'%}"  width="350" height="450 "alt="No carga">
+        </div>
+    </div>
+</div>
+
+{%endblock%}
+

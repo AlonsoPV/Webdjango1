@@ -1,0 +1,35 @@
+{% extends 'core/base.html' %}
+
+{%block title%} Contacto {%endblock%}
+
+{% block background %}{% load static %}{% static 'core/img/contact-bg.jpg'%}{%endblock%} <!--Tiene que estar seguido porque sino en el codigo da un salto y no lo lee-->
+
+
+{%block headers%}
+<h1>Contacto</h1>
+<span class="subheading">A01653036</span>
+{%endblock%}
+
+{%block content%}
+<div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+        <h2>Información</h2>
+        <ul>
+            <li><a href="mailto:alpeva96@gmail.com">Email</a></li>
+            <li><a href="https://github.com/hcosta">Github</a></li>
+            <li><a href="https://youtube.com">Youtube</a></li>
+        </ul>
+        <style>
+            .mapa{
+                margin-left: 350px;
+            }
+        </style>
+        <div >
+            <iframe class="mapa"  width="600" height="500" src="https://maps.google.com/maps?q=tec%20de%20monterrey,%20Prolongaci%C3%B3n%20Canal%20de%20Miramontes,%20Coapa,%20Los%20Colorines,%20Ciudad%20de%20M%C3%A9xico,%20CDMX&t=&z=13&ie=UTF8&iwloc=B&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+    </div>
+    
+</div>
+    
+{%endblock%}
+

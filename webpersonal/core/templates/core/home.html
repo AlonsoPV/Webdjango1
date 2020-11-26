@@ -1,0 +1,91 @@
+{% extends 'core/base.html' %}
+
+{%block title%}Portada{%endblock%}
+
+{% block background %}{% load static %}{% static 'core/img/st.jpg'%}{%endblock%} <!--Tiene que estar seguido porque sino en el codigo da un salto y no lo lee-->
+
+
+{%block headers%}
+<h1>Primer sitio web</h1>
+<span class="subheading">Proyecto final</span>
+{%endblock%}
+
+
+
+{%block content%}<!--Aqui irá todo el contenido-->
+
+    <!--<div class="row"> 
+        <div class="container">
+            <h1>Portada</h1>
+            <p>Esto es la portada</p>
+        </div>
+    </div>-->
+    <section class="features">
+        <!--Card1-->
+        <article class="feature-card">
+            <div class="feature-content">
+            <figure class=".figure">
+                <img src="{% static 'core/img/abejas.jpg'%} " alt="Publish icon" width="350" style="border-radius:100px" />
+            </figure>
+            <h3>La importancia de las abejas</h3>
+            <!--<p> Publish to your blog in less time than it takes to drink your morning coffee.</p>-->
+            <a href="portfolio/#abejas">Busca aquí →</a>
+            </div>
+            <div>
+            <figure>
+                <img src="{% static 'core/img/mac350px.png'%}" width="150" alt="Publish example"/>
+            </figure>
+            </div>
+        </article>
+        <!--Card2-->
+        <article class="feature-card">
+            <div class="feature-content">
+            <figure class=".figure">
+                <img src="{% static 'core/img/cdeetica.jpg'%}" alt="Publish icon" width="350" style="border-radius:100px"/>
+            </figure>
+            <h3>¿Por qué un código de ética?</h3>
+            <!--<p> Publish to your blog in less time than it takes to drink your morning coffee.</p>-->
+            <a href="portfolio/#codigo">Mira aquí →</a>
+            </div>
+            <div class="feature-image">
+            <figure class=".figure">
+                <img src="{% static 'core/img/manoa.png'%}" width="150" alt="Publish example"/>
+            </figure>
+            </div>
+        </article>
+        <!--Card3-->
+        <article class="feature-card">
+            <div class="feature-content">
+            <figure class=".figure">
+                <img src="{% static 'core/img/elefantes.jpg'%}" alt="Publish icon" width="350" style="border-radius:100px"/>
+            </figure>
+            <h3>¿Qué pasa con los elefantes?</h3>
+            <!--<p> Publish to your blog in less time than it takes to drink your morning coffee.</p>-->
+            <a href="portfolio/#elefantes">Mira aquí →</a>
+            </div>
+            <div class="feature-image">
+            <figure class=".figure">
+                <img src="{% static 'core/img/manom.png'%}" width="150" alt="Publish example"/>
+            </figure>
+            </div>
+        </article>
+        <!--Card4-->
+        <article class="feature-card">
+            <div class="feature-content">
+            <figure class=".figure">
+                <img src="{% static 'core/img/esr.png'%}" alt="Publish icon" width="350" style="border-radius:50px"/>
+            </figure>
+            <h3>¿Sabes que es una ESR?</h3>
+            <!--<p> Publish to your blog in less time than it takes to drink your morning coffee.</p>-->
+            <a href="portfolio/#esr">Averígualo →</a>
+            </div>
+            <div class="feature-image">
+            <figure class=".figure">
+                <img src="{% static 'core/img/mac350px.png'%}" width="150" alt="Publish example"/>
+            </figure>
+            </div>
+        </article>
+    </section>
+</div>
+{%endblock%}
+
